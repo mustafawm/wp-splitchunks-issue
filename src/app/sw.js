@@ -2,7 +2,6 @@ import { skipWaiting, clientsClaim } from 'workbox-core';
 import { precacheAndRoute } from 'workbox-precaching/precacheAndRoute';
 import { CacheFirst } from 'workbox-strategies/CacheFirst';
 import { StaleWhileRevalidate } from 'workbox-strategies/StaleWhileRevalidate';
-import cacheNames from 'shared/consts/cacheNames';
 import * as navigationPreload from 'workbox-navigation-preload';
 import { registerRoute, NavigationRoute } from 'workbox-routing';
 import { NetworkOnly } from 'workbox-strategies';
@@ -26,13 +25,13 @@ clientsClaim();
 registerRoute(
   new RegExp('.+/reference/.+'),
   new StaleWhileRevalidate({
-    cacheName: cacheNames.ref.name,
+    cacheName: 'ref',
   }),
 );
 registerRoute(
   /.*(?:googleapis|gstatic)\.com.*$/,
   new CacheFirst({
-    cacheName: cacheNames.googleFonts.name,
+    cacheName: 'fonts',
   }),
 );
 

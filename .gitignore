@@ -21,4 +21,3 @@ dist/*
 !dist/favicon.ico
 !dist/manifest.json
 !dist/commit.txt
-.env-cmdrc

@@ -1,18 +1,16 @@
 import React, { memo, useState, useEffect } from 'react';
-import classNames from 'classnames';
-import { useTranslation } from 'react-i18next';
 import { DragEndEvent, LeafletEvent } from 'leaflet';
 import { Map, TileLayer, Marker } from 'react-leaflet';
 import MarkerIcon from './Marker';
-import { mapUrl } from './consts';
 import { State, Props } from './types';
 import './LeafletSleep';
 import 'leaflet/dist/leaflet.css';
 
+const mapUrl = 'map/url';
+
 function LeafLetMap(props: Props) {
-  const { lat = 0, lng = 0, zoom = 10, className, onMarkerMove } = props;
+  const { lat = 0, lng = 0, zoom = 10, onMarkerMove } = props;
   const [viewport, setViewport] = useState<State>({ lat, lng, zoom });
-  const { t } = useTranslation();
 
   useEffect(() => {
     if (lat && lng) {
@@ -32,14 +30,13 @@ function LeafLetMap(props: Props) {
     }));
   }
 
-  const mapCss = classNames('h-48 z-0', className);
   const position = [viewport.lat, viewport.lng];
   return (
     <Map
-      wakeMessage={t('form.address.map.wakeMsg')}
-      wakeMessageTouch={t('form.address.map.wakeMsgTouch')}
+      wakeMessage="wake"
+      wakeMessageTouch="wake2"
       wakeTime={870}
-      className={mapCss}
+      className='h-48 z-0'
       zoom={viewport.zoom}
       onzoomend={handleZoomChange}
       center={position as [number, number]}

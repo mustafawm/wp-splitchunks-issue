@@ -1,7 +1,6 @@
 const fs = require('fs');
 const path = require('path');
 const webpack = require('webpack');
-const CopyPlugin = require('copy-webpack-plugin');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const { InjectManifest } = require('workbox-webpack-plugin');
 
@@ -36,14 +35,6 @@ module.exports = (env = {}) => {
 
     plugins: [
       new webpack.ProgressPlugin(),
-      new CopyPlugin({
-        patterns: [
-          {
-            from: `${rootPath}/src/assets/translations`,
-            to: 'locales/',
-          },
-        ],
-      }),
       new HtmlWebpackPlugin({
         hash: true,
         template: `${rootPath}/src/html/index.template.html`,
