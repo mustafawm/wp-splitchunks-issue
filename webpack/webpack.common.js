@@ -84,27 +84,5 @@ module.exports = (env = {}) => {
         },
       ],
     },
-
-    stats: {
-      all: false,
-      assets: false,
-      builtAt: true,
-      chunks: false,
-      colors: true,
-      errors: true,
-      chunkOrigins: false,
-      modules: true,
-      maxModules: 0,
-      warnings: true,
-      hash: true,
-      moduleTrace: false,
-      errorDetails: true,
-      publicPath: true,
-      timings: true,
-      usedExports: true,
-      version: true,
-      modulesSort: 'size',
-      excludeAssets: /.(otf|png)$/,
-    },
   };
 };
