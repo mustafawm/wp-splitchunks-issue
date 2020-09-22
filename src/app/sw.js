@@ -30,12 +30,6 @@ registerRoute(
   }),
 );
 registerRoute(
-  new RegExp('.+/blockchain/.+'),
-  new StaleWhileRevalidate({
-    cacheName: cacheNames.blockchain.name,
-  }),
-);
-registerRoute(
   /.*(?:googleapis|gstatic)\.com.*$/,
   new CacheFirst({
     cacheName: cacheNames.googleFonts.name,

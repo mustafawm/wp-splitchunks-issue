@@ -1,13 +1,11 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
-// import { lazyLoad } from 'shared/utils/ui';
-import SignUp from 'app/pages/LogInOutRegister/SignUp';
-// const SignUp = lazyLoad(() => import(''));
+import MapUsed3 from 'app/MapUsed3';
 
 export default function UnauthenticatedRoutes() {
   return (
       <Routes>
-        <Route path="signup" element={<SignUp />} />
+        <Route path="signup" element={<MapUsed3 />} />
       </Routes>
   );
 }

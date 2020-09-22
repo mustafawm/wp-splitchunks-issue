@@ -1,6 +1,0 @@
-@tailwind base;
-@tailwind components;
-@import "./utils.css";
-@import "./main.css";
-@import "./custom.css";
-@tailwind utilities;
