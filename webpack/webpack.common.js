@@ -2,7 +2,6 @@ const fs = require('fs');
 const path = require('path');
 const webpack = require('webpack');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
-const { InjectManifest } = require('workbox-webpack-plugin');
 
 const rootPath = path.resolve(__dirname, '..');
 const fontRegex = /.(eot|ttf|woff|otf|woff2)$/;
@@ -45,15 +44,7 @@ module.exports = (env = {}) => {
         template: `${rootPath}/src/html/index.template.html`,
         filename: 'offline.html',
         isOffline: true,
-      }),
-      ...(env.mode === 'test'
-        ? []
-        : [
-            new InjectManifest({
-              swSrc: `${rootPath}/src/app/sw.js`,
-              swDest: 'service-worker.js',
-            }),
-          ]),
+      })
     ],
 
     module: {

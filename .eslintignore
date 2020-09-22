@@ -1,4 +1,0 @@
-dist/*
-!dist/manifest.json
-node_modules
-LeafletSleep.js

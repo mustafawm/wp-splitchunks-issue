@@ -1,6 +1,0 @@
-package.json
-.vscode/
-node_modules
-dist
-coverage
-build

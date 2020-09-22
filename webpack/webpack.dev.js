@@ -1,6 +1,5 @@
 const path = require('path');
 const webpack = require('webpack');
-const ReactRefreshWebpackPlugin = require('@pmmmwh/react-refresh-webpack-plugin');
 
 const rootpath = path.resolve(__dirname, '..');
 
@@ -13,7 +12,6 @@ module.exports = (env = {}) => ({
     ? []
     : [
         new webpack.HotModuleReplacementPlugin(),
-        new ReactRefreshWebpackPlugin(),
       ],
 
   module: {
