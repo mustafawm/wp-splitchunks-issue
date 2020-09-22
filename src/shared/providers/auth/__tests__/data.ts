@@ -1,0 +1,25 @@
+export const oidc_user = {
+  id_token:
+    'eyJhbGciOiJSUzI1NiIsImtpZCI6IkY2RjIzQjcxMTg5Mjc2NjE5RjlGODA4REU3MTEwQ0I0QjIyRTc2NDEiLCJ0eXAiOiJKV1QiLCJ4NXQiOiI5dkk3Y1JpU2RtR2ZuNENONXhFTXRMSXVka0UifQ.eyJuYmYiOjE1ODY3NDU5NDYsImV4cCI6MTU4Njc0NjI0NiwiaXNzIjoiaHR0cHM6Ly9vaWN0LWVzcy1hcHBzZXJ2aWNlLWlkZW50aXR5LmF6dXJld2Vic2l0ZXMubmV0IiwiYXVkIjoiY2xpZW50LmNvZGUiLCJpYXQiOjE1ODY3NDU5NDYsImF0X2hhc2giOiJfRU16Z1Z2cEdYTGJISUVtYWs0SURRIiwic19oYXNoIjoiTGNpOGZCTTR0NHpGbHp1NklVNjlBZyIsInNpZCI6IlNHMDQteXZ5NTlTT2dYeG1yd3V5bUEiLCJzdWIiOiI2YmZmZDVjNi03NTAyLTQwZDgtOTY2Ni1lZTE1MmE3MGFjMTUiLCJhdXRoX3RpbWUiOjE1ODU1MzY1NzEsImlkcCI6ImxvY2FsIiwiYW1yIjpbInB3ZCJdfQ.AGtvnQIC8Hu_FBGDZECTZmbW0FoIdyuCwTthzaynXJgPtRpToOiq-3obUrVuCxIxe2iKqzMsBLuwb0UPnDfRs1MyuqcASLLiogiXng5M4EItgdFApHSjf8mCxL5Xlq5AIowlDRQ8cNcNaR6MYqnEC1iSfuRlVoNjxg05GXwDQ0Ir8MK5YQMYnlxxd3wgEvVYQvpUNEDymoZC5PFPPfanBzvymbcAFzOLbn0z1kgxB4YBt2Wthefy4Vj4TdV1MOoPNn9iI-hyrJ0Ngndj8VRgul0FxMwUMfkIf8jf6gDk6-jEYSQL8pydYjZs9AOiedYnX6N22YpNR4VDUPB3HwlBvA',
+  session_state:
+    'SVF8-EjZ-bP1VyOpdsp4J-Mfq2ArMwAXk0NwztnoUns.DV62A_NBPSVy4smmt3Mdkg',
+  access_token:
+    'eyJhbGciOiJSUzI1NiIsImtpZCI6IkY2RjIzQjcxMTg5Mjc2NjE5RjlGODA4REU3MTEwQ0I0QjIyRTc2NDEiLCJ0eXAiOiJhdCtqd3QiLCJ4NXQiOiI5dkk3Y1JpU2RtR2ZuNENONXhFTXRMSXVka0UifQ.eyJuYmYiOjE1ODY3NDU5NDYsImV4cCI6MTU4Njc0OTU0NiwiaXNzIjoiaHR0cHM6Ly9vaWN0LWVzcy1hcHBzZXJ2aWNlLWlkZW50aXR5LmF6dXJld2Vic2l0ZXMubmV0IiwiY2xpZW50X2lkIjoiY2xpZW50LmNvZGUiLCJzdWIiOiI2YmZmZDVjNi03NTAyLTQwZDgtOTY2Ni1lZTE1MmE3MGFjMTUiLCJhdXRoX3RpbWUiOjE1ODU1MzY1NzEsImlkcCI6ImxvY2FsIiwic2NvcGUiOlsicHJvZmlsZSIsIm9wZW5pZCIsIm9mZmxpbmVfYWNjZXNzIl0sImFtciI6WyJwd2QiXX0.za_FZZXIFw6lJy-2w8YZ0OPtEVK1dxTADC31VjX_fMsuN4xjoIFWzqKpgPHH4w56-dHtdE2er7iHewADZg5-SkFpwZvefeYoTCPTVG6xu6Z-x2TNQ-VJBL0w8hVBh8iy7mLMNqO5LQwrsYTtC16Udz1Wn7XTGFEFUZikngt8vZZbVP514O05AyfRjyzOoINt2POeaDHMxpLEW8qqowgjqRPMaSfTSB_5egLNhQp6WVyaEDifRWKQ4lYOw45WFkFaDfd4tluQEg-UWmn2wfeUpXvCa63UfYfa7UonL6_JaCEP0vzTJSuN7uSIkuZ9l0IfG_-HAAN0U8m23CktpQBevw',
+  refresh_token: 'xS8xv5hSoIcxVbdA-K-ZztTeylKWd4wHoJN-LKdxDsw',
+  token_type: 'Bearer',
+  scope: 'openid profile offline_access',
+  profile: {
+    s_hash: 'Lci8fBM4t4zFlzu6IU69Ag',
+    sid: 'SG04-yvy59SOgXxmrwuymA',
+    sub: '6bffd5c6-7502-40d8-9666-ee152a70ac15',
+    auth_time: 1585536571,
+    idp: 'local',
+    amr: ['pwd'],
+    name: 'Alice Smith',
+    given_name: 'Alice',
+    family_name: 'Smith',
+    website: 'http://alice.com',
+    preferred_username: 'alice',
+  },
+  expires_at: 1586749546,
+};
